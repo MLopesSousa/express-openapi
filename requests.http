@@ -1,0 +1,29 @@
+###
+GET http://localhost:3000/users
+
+###
+GET http://localhost:3000/users/Marcelo
+
+###
+GET http://localhost:3000/users/Diego
+
+###
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+    "name": "Amanda",
+    "age": 10
+}
+
+###
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+    "name": "Amanda",
+    "age": 0
+}
+
+###
+DELETE http://localhost:3000/users/Amanda
