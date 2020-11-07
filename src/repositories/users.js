@@ -13,9 +13,7 @@ const select = (name) => {
     })[0]
 }
 
-const create = (name, age) => {
-    const user = new User(name, age)
-
+const create = (User) => {
     if(user.validate()) {
         users.push(user)
         return users
